@@ -1,0 +1,30 @@
+package dart.dartProfile.darts_app.entity;
+
+import lombok.*;
+
+import java.time.LocalDateTime;
+import java.util.UUID;
+
+
+@Data
+@Builder
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+
+public class AddAddressReqModel {
+    private UUID uuid;
+    private String type;
+    private String organisation_id;
+    private String address_line1;
+    private String address_line2;
+    private String street;
+    private String city;
+    private String state;
+    private String zip;
+    private String country;
+    private boolean status;
+    private LocalDateTime created_at;
+    private LocalDateTime updated_at;
+}
